@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたの時間を生み出すオンライン秘書｜ゆみ</title>
+  
+  <!-- Google Fonts: Zen Maru Gothic & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDF7F8',
+              100: '#FBF0F2',
+              200: '#F7DCE2',
+              300: '#F0BFCA',
+              400: '#E498A9',
+              500: '#D5738B',
+              600: '#C0526D',
+              700: '#9F3E55',
+            },
+            sand: {
+              50: '#FAF9F8',
+              100: '#F4F2F0',
+              200: '#E8E5E1',
+              700: '#524E4B',
+              800: '#423F3D',
+            }
+          },
+          fontFamily: {
+            sans: ['"Zen Maru Gothic"', '"Inter"', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 8px 30px -4px rgba(213, 115, 139, 0.12)',
+            'float': '0 12px 35px -5px rgba(160, 90, 110, 0.18)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      background-color: #FAF9F8;
+      color: #4A4644;
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    .gradient-hero {
+      background: linear-gradient(180deg, #FBF0F2 0%, #FAF9F8 100%);
+    }
+    .gradient-accent {
+      background: linear-gradient(135deg, #F9E6EB 0%, #F5D3DC 100%);
+    }
+    .cta-btn-gradient {
+      background: linear-gradient(135deg, #D5738B 0%, #C0526D 100%);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .cta-btn-gradient:hover {
+      background: linear-gradient(135deg, #C0526D 0%, #A9435D 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -4px rgba(192, 82, 109, 0.35);
+    }
+    /* Subtle wave divider */
+    .wave-bg {
+      background-image: radial-gradient(#F5D3DC 0.75px, transparent 0.75px);
+      background-size: 16px 16px;
+    }
+  </style>
+</head>
+<body class="selection:bg-brand-200 selection:text-brand-800">
+
+  <!-- Top Navigation / Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-brand-100 transition-all duration-200">
+    <div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-100 text-brand-600 text-sm">
+          🌸
+        </span>
+        <span class="text-xs sm:text-sm font-bold tracking-wider text-sand-800">オンライン秘書 ゆみ</span>
+      </div>
+      <a href="https://forms.gle/LcjXVSuB43R3hMAB9" target="_blank" rel="noopener noreferrer" class="text-xs bg-brand-500 hover:bg-brand-600 text-white font-medium px-3.5 py-1.5 rounded-full shadow-sm transition">
+        まずは相談する
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-xl mx-auto px-4 pb-28">
+    <!-- Hero / Catchphrase -->
+    <section class="pt-8 pb-10 text-center">
+      <div class="inline-block bg-brand-100 text-brand-600 text-xs font-semibold px-4 py-1.5 rounded-full mb-4 shadow-sm">
+        🕊️ がんばる個人起業家・発信者さんのための伴走型オンライン秘書
+      </div>
+      
+      <h1 class="text-2xl sm:text-3xl font-bold text-sand-800 tracking-tight leading-snug mb-4 text-center">
+        もう、ぜんぶ一人で<br>
+        <span class="text-brand-600 bg-gradient-to-r from-brand-100 to-transparent px-1 rounded">抱え込まなくて大丈夫。</span>
+      </h1>
+
+      <p class="text-sand-700 text-sm sm:text-base leading-relaxed mb-6 font-medium text-center">
+        あなたの時間を、本当に大切なことへ。<br>
+        発信・事務・調整に追われる毎日から、<br>
+        心からお客様に向き合える安心の日々へ。
+      </p>
+
+      <!-- Visual Showcase with warm soft tones -->
+      <div class="relative mx-auto my-6 rounded-3xl overflow-hidden shadow-soft border-4 border-white bg-gradient-to-b from-brand-50 to-brand-100 p-6">
+        <div class="flex flex-col items-center justify-center space-y-4">
+          <!-- Flower Illustration Badge -->
+          <div class="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-inner border border-brand-200">
+            <svg class="w-10 h-10 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <div class="text-center">
+            <span class="text-xs uppercase tracking-widest text-brand-500 font-semibold">Online Assistant Support</span>
+            <p class="text-sm font-bold text-sand-800 mt-1">「君がいるだけで、みんなが安心する」</p>
+            <p class="text-xs text-sand-600 mt-0.5">医療事務30年の丁寧さと、温かな傾聴力で寄り添います</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick CTA Button -->
+      <a href="https://forms.gle/LcjXVSuB43R3hMAB9" target="_blank" rel="noopener noreferrer" class="cta-btn-gradient inline-flex items-center justify-center w-full py-3.5 px-6 rounded-2xl text-white font-bold text-base shadow-soft hover:shadow-float gap-2">
+        <span>無料ヒアリング面談（Zoom 45分）を申し込む</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      <p class="text-xs text-sand-500 mt-2 text-center">※まずは気軽にお話しするだけでOKです</p>
+    </section>
+
+    <!-- Problem & Empathy Section -->
+    <section class="py-8 border-t border-brand-100">
+      <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-soft border border-brand-100 relative">
+        <div class="flex items-center space-x-2 text-brand-600 font-bold text-sm mb-3">
+          <span class="text-lg">🚩</span>
+          <span>こんなお悩み、抱えていませんか？</span>
+        </div>
+
+        <ul class="space-y-3.5 text-sm text-sand-700">
+          <li class="flex items-start">
+            <span class="text-brand-400 mr-2 mt-0.5 font-bold">✔</span>
+            <span>フォロワーや受講生が増えて嬉しいけれど、<strong>事務や個別対応が雪だるま式に増えている</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-brand-400 mr-2 mt-0.5 font-bold">✔</span>
+            <span>発信、講座、日程調整、書類作り……。気づけばすべてを一人で回して、息切れしている</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-brand-400 mr-2 mt-0.5 font-bold">✔</span>
+            <span>「誰かに任せたい」けれど、<strong>何を・どこまで・どう頼めばいいか整理できていない</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-brand-400 mr-2 mt-0.5 font-bold">✔</span>
+            <span>「これくらい自分でやったほうが早いかも」と<strong>結局自分が全部抱え込んでしまう</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-brand-400 mr-2 mt-0.5 font-bold">✔</span>
+            <span>作業だけをこなすドライな外注ではなく、<strong>私の想いに寄り添ってくれる右腕がほしい</strong></span>
+          </li>
+        </ul>
+
+        <div class="mt-6 pt-5 border-t border-dashed border-brand-200 text-center">
+          <p class="text-xs sm:text-sm text-sand-700 leading-relaxed font-medium">
+            一人で回せてしまう器用さがあるからこそ、<br class="hidden sm:inline">
+            「頼るタイミング」を後回しにしてきませんでしたか？
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insight Section -->
+    <section class="py-8">
+      <div class="text-center mb-6">
+        <span class="text-xs font-semibold text-brand-500 tracking-wider">REASON</span>
+        <h2 class="text-xl font-bold text-sand-800 mt-1">あなたが今まで頼めなかった本当の理由</h2>
+      </div>
+
+      <div class="space-y-4 text-sm text-sand-700 leading-relaxed bg-brand-50/60 p-6 rounded-3xl border border-brand-100">
+        <p>
+          「人に頼むなら、まずは業務をマニュアル化してからじゃないと…」<br>
+          そう思っていませんか？
+        </p>
+        <p>
+          でも、日々の業務に追われている最中に、きれいに整理する時間なんて取れるはずがありません。
+          その結果、頭の片隅にいつも「あれもやらなきゃ」という雑務のプレッシャーが残り続け、
+          本当に情熱を注ぎたい<strong>「発信」や「お客様へのサポート」</strong>の時間が削られてしまうのです。
+        </p>
+        <div class="bg-white p-4 rounded-2xl border-l-4 border-brand-400 shadow-sm">
+          <p class="font-bold text-sand-800 text-sm">
+            💡 頼ることは、弱さや甘えではありません。
+          </p>
+          <p class="text-xs text-sand-600 mt-1">
+            活動を長く、心地よく続けていくための「前向きな選択」です。頭の中がまとまっていない、カオスな状態のままで頼っていいのです。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Story & Heart Section -->
+    <section class="py-8">
+      <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-soft border border-brand-100">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-xl shrink-0">
+            🌿
+          </div>
+          <div>
+            <span class="text-xs text-brand-500 font-bold block">MY STORY</span>
+            <h3 class="text-base font-bold text-sand-800">「前に出る人」を裏側から支えることが、私の役割</h3>
+          </div>
+        </div>
+
+        <div class="space-y-3.5 text-sm text-sand-700 leading-relaxed">
+          <p>
+            はじめまして。オンライン秘書の<strong>ゆみ</strong>です。<br>
+            私自身、子どもの不登校をきっかけに「悩んでいるお母さんたちに届けたい」と約2年間、SNSでの発信を続けてきました。
+          </p>
+          <p>
+            正直に言うと、私は動画撮影や前に出ることがあまり得意ではありませんでした。「発信者なんだから」「ちゃんとやらなきゃ」と自分を奮い立たせて前に出ようとしていたのです。
+          </p>
+          <p>
+            でも、自己理解を深める中で、ある確信にたどり着きました。<br>
+            私は、自分が前に出続けることよりも、
+            <span class="bg-brand-100 px-1 py-0.5 rounded font-semibold text-brand-700">「頑張っている人の裏側で作業を整え、スムーズに回しているとき」</span>
+            にこそ、自然と力が湧き、心からワクワクできるということでした。
+          </p>
+          
+          <div class="bg-brand-50 p-4 rounded-2xl mt-4 border border-brand-100">
+            <p class="text-xs font-bold text-brand-700 mb-1">🏥 以前勤めていた病院の院長からいただいた言葉</p>
+            <p class="text-sm italic font-medium text-sand-800">
+              「君がいるだけで、スタッフみんなが安心するからね」
+            </p>
+            <p class="text-xs text-sand-600 mt-2">
+              学生時代のお弁当屋で培った「どこが回っていないかを瞬時に見極めて動く力」と、約30年の医療事務（主任経験含む）で培った「丁寧で正確な実務と傾聴力」。これらを活かして、頑張るあなたの安心の右腕になりたいと思っています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="py-8">
+      <div class="text-center mb-6">
+        <span class="text-xs font-semibold text-brand-500 tracking-wider">SUPPORT MENU</span>
+        <h2 class="text-xl font-bold text-sand-800 mt-1">ゆみのサポートでできること</h2>
+        <p class="text-xs text-sand-600 mt-1">「こんなこと頼んでいいの？」という細かな業務も歓迎です</p>
+      </div>
+
+      <div class="space-y-3.5">
+        <!-- Item 1 -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-brand-100 flex items-start space-x-3.5">
+          <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 text-base font-bold">
+            01
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-800 text-sm">思考整理・言語化の壁打ちサポート</h4>
+            <p class="text-xs text-sand-600 mt-1 leading-relaxed">
+              カウンセリングや心理学の学びを活かし、散らかったアイデアや優先順位を一緒に優しく整理します。まとまっていない状態の相談で大歓迎です。
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-brand-100 flex items-start space-x-3.5">
+          <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 text-base font-bold">
+            02
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-800 text-sm">事務サポート全般・Googleツール管理</h4>
+            <p class="text-xs text-sand-600 mt-1 leading-relaxed">
+              Googleドキュメント／スプレッドシートの作成・管理、フォーム作成、Word・Excelでの資料作成など、正確かつ迅速に整えます。
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-brand-100 flex items-start space-x-3.5">
+          <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 text-base font-bold">
+            03
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-800 text-sm">Canva資料・SNS素材の作成補助</h4>
+            <p class="text-xs text-sand-600 mt-1 leading-relaxed">
+              告知画像やスライド資料、テンプレート作成など、発信に必要な素材づくりを丁寧にサポートします。
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-brand-100 flex items-start space-x-3.5">
+          <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 text-base font-bold">
+            04
+          </div>
+          <div>
+            <h4 class="font-bold text-sand-800 text-sm">スケジュール調整 & Zoom対応</h4>
+            <p class="text-xs text-sand-600 mt-1 leading-relaxed">
+              クライアント様との面談日程の調整やリマインド、当日のホスト対応など、スムーズな運営を裏側から支えます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future / Benefits Section -->
+    <section class="py-8">
+      <div class="bg-gradient-to-br from-brand-100/70 via-brand-50 to-white p-6 sm:p-7 rounded-3xl border border-brand-200 shadow-soft text-center">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">FUTURE</span>
+        <h2 class="text-lg sm:text-xl font-bold text-sand-800 mt-1 mb-4">
+          私に任せていただくことで、<br>こんな未来が待っています
+        </h2>
+
+        <div class="grid grid-cols-1 gap-3 text-left">
+          <div class="bg-white/90 backdrop-blur p-4 rounded-2xl shadow-sm border border-brand-100">
+            <div class="flex items-center gap-2 font-bold text-brand-600 text-sm mb-1">
+              <span>✨</span>
+              <span>「やらなきゃ」の雑務プレッシャーから解放</span>
+            </div>
+            <p class="text-xs text-sand-600 leading-relaxed">
+              朝起きたときに頭をよぎる細かなタスクの重荷がなくなり、心がフッと軽くなります。
+            </p>
+          </div>
+
+          <div class="bg-white/90 backdrop-blur p-4 rounded-2xl shadow-sm border border-brand-100">
+            <div class="flex items-center gap-2 font-bold text-brand-600 text-sm mb-1">
+              <span>✨</span>
+              <span>本当にやりたい「発信」と「顧客対応」に全集中</span>
+            </div>
+            <p class="text-xs text-sand-600 leading-relaxed">
+              受講生やフォロワーさんとじっくり向き合う時間が増え、事業の成果と満足度がアップします。
+            </p>
+          </div>
+
+          <div class="bg-white/90 backdrop-blur p-4 rounded-2xl shadow-sm border border-brand-100">
+            <div class="flex items-center gap-2 font-bold text-brand-600 text-sm mb-1">
+              <span>✨</span>
+              <span>「いつでも相談できる安心の右腕」がいる心強さ</span>
+            </div>
+            <p class="text-xs text-sand-600 leading-relaxed">
+              「これお願いしていいのかな？」と一人で悩む時間がなくなり、安心して前だけを向いて走れます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-8">
+      <div class="text-center mb-6">
+        <span class="text-xs font-semibold text-brand-500 tracking-wider">PRICE & PLAN</span>
+        <h2 class="text-xl font-bold text-sand-800 mt-1">安心してお試しいただける料金設定</h2>
+        <p class="text-xs text-sand-600 mt-1">お互いの相性と心地よさを確認するためのモニター期間です</p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 shadow-soft border-2 border-brand-300 relative overflow-hidden">
+        <div class="absolute top-0 right-0 bg-brand-500 text-white text-[10px] font-bold px-4 py-1 rounded-bl-xl tracking-wider">
+          初回限定モニター枠
+        </div>
+
+        <div class="text-center pb-4 border-b border-brand-100 mt-2">
+          <span class="text-xs text-brand-600 font-bold">まずは気軽に試せる</span>
+          <h3 class="text-lg font-bold text-sand-800 mt-0.5">お試しモニタープラン</h3>
+          <div class="mt-3 flex items-baseline justify-center">
+            <span class="text-3xl font-extrabold text-brand-600">1,000</span>
+            <span class="text-sm font-bold text-sand-700 ml-1">円 / 1時間</span>
+          </div>
+          <p class="text-xs text-sand-500 mt-1">※月10時間までご利用可能（初回のみ）</p>
+        </div>
+
+        <div class="py-4 text-xs text-sand-700 space-y-2.5">
+          <p class="flex items-center">
+            <svg class="w-4 h-4 text-brand-500 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            <span>実際の業務を通しながら、心地よい関係性を確認</span>
+          </p>
+          <p class="flex items-center">
+            <svg class="w-4 h-4 text-brand-500 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l        <!-- Google Form CTA Link Block -->
+        <div class="text-center space-y-4 my-4">
+          <p class="text-xs text-sand-600">※お申し込み・日程調整は専用のGoogleフォームより受け付けております（約1分）</p>
+          <a href="https://forms.gle/LcjXVSuB43R3hMAB9" target="_blank" rel="noopener noreferrer" class="cta-btn-gradient w-full py-4 rounded-2xl text-white font-bold text-base shadow-soft hover:shadow-float flex items-center justify-center gap-2">
+            <span>無料ヒアリング面談（Zoom 45分）を申し込む</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>��談（45分）</h4>
+            <p class="text-xs text-sand-600 mt-0.5">現状のお悩みやご依頼内容をお聞かせください。</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-2xl border border-brand-100 flex items-center space-x-3.5">
+          <span class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 font-bold text-xs flex items-center justify-center shrink-0">STEP 3</span>
+          <div>
+            <h4 class="text-sm font-bold text-sand-800">業務内容のご確認・ご契約</h4>
+            <p class="text-xs text-sand-600 mt-0.5">内容にご納得いただけましたら契約を締結します。</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-2xl border border-brand-100 flex items-center space-x-3.5">
+          <span class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 font-bold text-xs flex items-center justify-center shrink-0">STEP 4</span>
+          <div>
+            <h4 class="text-sm font-bold text-sand-800">サポート開始</h4>
+            <p class="text-xs text-sand-600 mt-0.5">安心して本業に集中できる日々がスタートします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA & Contact Section -->
+    <section id="contact" class="pt-8 pb-4">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-soft border border-brand-200 text-center relative">
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand-100 text-brand-500 mb-3 text-xl">
+          💌
+        </div>
+        
+        <h2 class="text-xl font-bold text-sand-800 leading-snug mb-2">
+          まずは肩の力を抜いて、<br>少しだけお話ししてみませんか？
+        </h2>
+        
+        <p class="text-xs sm:text-sm text-sand-600 leading-relaxed mb-6 font-normal">
+          「何から相談すればいいかわからない」という状態でも大歓迎です。<br>
+          温かいお茶を用意して、あなたからのメッセージを心よりお待ちしています。
+        </p>
+
+        <!-- Mock Contact Form (Functional and smooth) -->
+        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="text-left space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-sand-700 mb-1">お名前 <span class="text-brand-500">*</span></label>
+            <input type="text" id="name" required placeholder="例：山田 花子" class="w-full px-4 py-3 rounded-xl border border-brand-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent bg-sand-50 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-sand-700 mb-1">メールアドレス <span class="text-brand-500">*</span></label>
+            <input type="email" id="email" required placeholder="example@mail.com" class="w-full px-4 py-3 rounded-xl border border-brand-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent bg-sand-50 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-sand-700 mb-1">現在のお仕事や発信ジャンル</label>
+            <input type="text" id="business" placeholder="例：コーチング、オンライン講座運営 など" class="w-full px-4 py-3 rounded-xl border border-brand-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent bg-sand-50 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-sand-700 mb-1">今一番手放したいこと・気になっていること</label>
+            <textarea id="message" rows="3" placeholder="「日程調整が大変」「何を頼めるか相談したい」など、一言でも大丈夫です" class="w-full px-4 py-3 rounded-xl border border-brand-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent bg-sand-50 transition"></textarea>
+          </div>
+
+          <button type="submit" class="cta-btn-gradient w-full py-4 rounded-2xl text-white font-bold text-base shadow-soft hover:shadow-float mt-2 flex items-center justify-center gap-2">
+            <span>無料ヒアリング（Zoom 45分）を申し込む</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </form>
+
+        <!-- Message Box (Alert substitute) -->
+        <div id="responseMessage" class="hidden mt-4 p-4 rounded-2xl bg-brand-50 border border-brand-300 text-center">
+          <p class="text-sm font-bold text-brand-700">🕊️ メッセージを受け付けました</p>
+          <p class="text-xs text-sand-600 mt-1">24時間以内に折り返しZoom候補日をご案内いたします。お話しできることを楽しみにしています！</p>
+        </div>
+
+        <p class="text-[11px] text-sand-500 mt-4 text-center">
+          🔒 ご入力いただいた個人情報は面談の調整以外には使用いたしません。
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-8 pt-6 pb-12 text-center border-t border-brand-100">
+      <div class="flex items-center justify-center space-x-2 mb-2">
+        <span class="text-brand-500 font-bold text-sm">ゆみ ｜ あなたの時間を生み出すオンライン秘書</span>
+      </div>
+      <p class="text-[11px] text-sand-400 mt-4">
+        &copy; 2024 Yumi Online Secretary. All rights reserved.
+      </p>
+    </footer>
+  </main>
+
+  <!-- Mobile Fixed Bottom CTA Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-30 p-3 bg-white/95 backdrop-blur-md border-t border-brand-100 sm:hidden">
+    <div class="max-w-md mx-auto flex items-center gap-3">
+      <div class="text-left leading-tight pl-1">
+        <span class="text-[10px] text-brand-600 font-bold block">初回限定モニター枠</span>
+        <span class="text-xs font-bold text-sand-800">1,000円 / 1時間</span>
+      </div>
+      <a href="https://forms.gle/LcjXVSuB43R3hMAB9" target="_blank" rel="noopener noreferrer" class="cta-btn-gradient flex-1 py-2.5 px-4 rounded-xl text-white font-bold text-xs text-center shadow-soft">
+        無料ヒアリングを申し込む ✨
+      </a>
+    </div>
+  </div>
+
+  <script>
+    /* Handling Contact Form Submission smoothly without alert() */
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('contactForm');
+      const responseMsg = document.getElementById('responseMessage');
+      
+      // Simulate submission success
+      form.classList.add('opacity-50', 'pointer-events-none');
+      
+      setTimeout(() => {
+        form.classList.add('hidden');
+        responseMsg.classList.remove('hidden');
+      }, 500);
+    }
+  </script>
+</body>
+</html>
